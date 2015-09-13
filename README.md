@@ -1,2 +1,0 @@
-# contactlistapp
-MEAN framework demo
