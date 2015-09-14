@@ -9,3 +9,6 @@ This is a demo of MEAN (Mongo, Express, AngularJS, Node.js) stack development.
         - Install express by npm
         $ npm install express
     c) 
+    
+2. AngularJS
+    a) url: 
