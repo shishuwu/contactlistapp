@@ -11,6 +11,8 @@ This is a demo of MEAN (Mongo, Express, AngularJS, Node.js) stack development.
         
         - Intall body parser
         $ npm install body-parser
+        
+        (set npm proxy: $ npm config set proxy=http://127.0.0.1:8087)
 
     Folders
     a) /public: Usually as front-end folder: angularjs
