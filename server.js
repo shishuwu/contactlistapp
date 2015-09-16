@@ -2,11 +2,14 @@ var express = require('express');
 var app = express();
 var mongojs = require('mongojs');
 var db = mongojs('contactlist', ['contactlist']);
+var bodyParser = require('body-parser');
 //app.get('/', function(req, res){
 //	res.send("Hello world from server.js");
 //});
 
 app.use(express.static(__dirname + "/public"));
+app.use(bodyParser.json());
+
 app.get('/contactlist', function(req, res){
     console.log("I received a GET request");
     
@@ -36,6 +39,10 @@ app.get('/contactlist', function(req, res){
         console.log(docs);
         res.json(docs);
     });
+});
+
+app.post('/contactlist', function(req, res){
+    console.log(req.body);
 });
 
 app.listen(3000);
