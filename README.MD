@@ -9,6 +9,15 @@ This is a demo of MEAN (Mongo, Express, AngularJS, Node.js) stack development.
         - Install express by npm
         $ npm install express
 
+    Folders
+    a) /public: Usually as front-end folder: angularjs
+    b) /router
+    c) /bin
+    d) /node_modules
+    e) /views: templates
+    
+    
+
 2. AngularJS
     a) url: 
         https://www.angularjs.org/
@@ -24,5 +33,18 @@ This is a demo of MEAN (Mongo, Express, AngularJS, Node.js) stack development.
     
     
     
-    
-    
+4. MongoDB
+    a) url: www.mongodb.com
+        - there is mooc cource on internet.
+    b) usage:
+        - start server: mongod
+        - start client: mongo
+        
+        - operate db: 
+            * show dbs
+            * use xxdb
+            * db.contactlist.insert({json: 'json'});
+            * db.contactlist.find().pretty();
+        
+    c) install it in node
+        - $ node install mongojs
