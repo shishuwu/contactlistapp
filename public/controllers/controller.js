@@ -34,5 +34,12 @@ app.controller('AppCtrl', function ($scope, $http) {
         });
     
     }
+    
+    $scope.edit = function (id){
+        console.log("edit id from controller " + id);
+        $http.get('/contactlist/' + id).success(function(response){
+            $scope.contact = response;
+        });
+    }
 
 });
